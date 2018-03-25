@@ -18,7 +18,7 @@ El texto ha sido obtenido desde https://es.wikisource.org/wiki/Tao_Te_King y cop
 Para dar formato a algunos saltos de página y tabulaciones y crear los capítulos se han usado los siguientes comandos de la shell:
 
 ```bash
-sed s/"Capítulo"/"\n\nCapítulo"/g Tao_Te_King.txt | sed s/"\t"/"\n\n"/g - | csplit -f Cap -b %02d.txt  -  '/^Capítulo*/' '{*}'  && rm Cap00.txt'
+sed s/"Capítulo"/"\n\nCapítulo"/g Tao_Te_King.txt | sed s/"\t"/"\n\n"/g - | csplit -f Cap -b %02d.txt  -  '/^Capítulo*/' '{*}'  && rm Cap00.txt
 ```
 
 ## Finalidad de este repositorio
